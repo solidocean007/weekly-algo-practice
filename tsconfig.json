@@ -110,7 +110,6 @@
   "include": [
     "src/**/*.ts", // Ensure all TypeScript files from src are compiled
     "src/**/*.js",
-    "src/getRomanNumeral.sts"
   ],
   "exclude": [
     "node_modules",

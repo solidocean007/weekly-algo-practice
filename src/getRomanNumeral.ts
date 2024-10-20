@@ -15,6 +15,18 @@ export const romanNumerals: Record<string, number> = {
 };
 
 function getRomanNumerals(num: number){
+  if (num < 0) {
+    throw new Error('Invalid input: negative numbers are not allowed');
+  }
+  
+  if (!Number.isInteger(num)) {
+    throw new Error('Invalid input: input must be an integer');
+  }
+
+  if (num === 0) {
+    return '';
+  };
+  
   let result = '';
   for(const numeral in romanNumerals){
     const value = romanNumerals[numeral];
