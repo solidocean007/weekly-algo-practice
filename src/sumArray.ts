@@ -1,4 +1,4 @@
-function sumArray(arr:[]){
+function sumArray(arr:number[]){
   return arr.reduce((acc, curr) => acc + curr,0);
 }
 
